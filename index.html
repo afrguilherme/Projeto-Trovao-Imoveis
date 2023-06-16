@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap"
       rel="stylesheet"
@@ -14,16 +15,32 @@
   </head>
   <body>
     <header>
-      <img class="header-logo" src="./assets/logo.png" />
+      <img class="header-logo" alt="imagem-logo" src="./assets/logo.png" />
       <nav>
         <ul class="nav-list">
           <li class="nav-list-item"><a class="nav-links">Início</a></li>
-          <li class="nav-list-item"><a class="nav-links">Imóveis</a></li>
+          <li class="nav-list-item">
+            <a class="nav-links">Imóveis Disponíveis</a>
+          </li>
           <li class="nav-list-item"><a class="nav-links">Contato</a></li>
           <li class="nav-list-item"><a class="nav-links">Sobre</a></li>
         </ul>
-        <img class="mobile-menu-icon" src="./assets/menu-icon.png" />
+        <img
+          class="mobile-menu-icon"
+          alt="icone-menu"
+          src="./assets/menu-icon.png"
+        />
       </nav>
     </header>
+    <main>
+      <section class="slider-section">
+        <img
+          id="slider-image"
+          alt="imagem-carrossel"
+          src="./assets/slider1.png"
+        />
+      </section>
+    </main>
   </body>
+  <script src="./script.js"></script>
 </html>
