@@ -10,15 +10,26 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <link href="styles.css" rel="stylesheet" />
     <title>Trovão Imóveis</title>
   </head>
   <body>
     <header>
-      <img class="header-logo" alt="imagem-logo" src="./assets/logo.png" />
+      <img
+        class="header-logo"
+        alt="imagem-logo"
+        src="./assets/logo.png"
+        href="#swiper"
+      />
       <nav>
         <ul class="nav-list">
-          <li class="nav-list-item"><a class="nav-links">Início</a></li>
+          <li class="nav-list-item">
+            <a href="#swiper" class="nav-links">Início</a>
+          </li>
           <li class="nav-list-item">
             <a class="nav-links">Imóveis Disponíveis</a>
           </li>
@@ -32,59 +43,46 @@
         />
       </nav>
     </header>
-    <div class="slider">
-      <div class="slides">
-        <!--Radio Buttons-->
-        <input type="radio" name="radio-btn" id="radio1" />
-        <input type="radio" name="radio-btn" id="radio2" />
-        <input type="radio" name="radio-btn" id="radio3" />
-        <input type="radio" name="radio-btn" id="radio4" />
-        <input type="radio" name="radio-btn" id="radio5" />
-        <!--Fim Radio Buttons-->
-
-        <!--Slide Images-->
-
-        <div class="slide first">
-          <img src="./assets/slider1.png" alt="Imagem 1" />
+    <main>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swiper-img">
+              <img src="./assets/slider4.png" alt="Foto 01" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-img">
+              <img src="./assets/slider1.png" alt="Foto 02" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-img">
+              <img src="./assets/slider3.png" alt="Foto 03" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-img">
+              <img src="./assets/slider2.png" alt="Foto 01" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-img">
+              <img src="./assets/slider5.png" alt="Foto 01" />
+            </div>
+          </div>
         </div>
-
-        <div class="slide">
-          <img src="./assets/slider2.png" alt="Imagem 2" />
-        </div>
-
-        <div class="slide">
-          <img src="./assets/slider3.png" alt="Imagem 3" />
-        </div>
-
-        <div class="slide">
-          <img src="./assets/slider4.png" alt="Imagem 4" />
-        </div>
-
-        <div class="slide">
-          <img src="./assets/slider5.png" alt="Imagem 5" />
-        </div>
-
-        <!--Fim Slide Images-->
-
-        <!--Navigation Auto-->
-
-        <div class="navigation-auto">
-          <div class="auto-btn1"></div>
-          <div class="auto-btn2"></div>
-          <div class="auto-btn3"></div>
-          <div class="auto-btn4"></div>
-          <div class="auto-btn5"></div>
-        </div>
+        <div class="swiper-button-next swiper-btn"></div>
+        <div class="swiper-button-prev swiper-btn"></div>
+        <div class="swiper-pagination"></div>
       </div>
 
-      <div class="manual-navigation">
-        <label for="radio1" class="manual-btn"></label>
-        <label for="radio2" class="manual-btn"></label>
-        <label for="radio3" class="manual-btn"></label>
-        <label for="radio4" class="manual-btn"></label>
-        <label for="radio5" class="manual-btn"></label>
-      </div>
-    </div>
+      <!--swiper end-->
+    </main>
+    <footer>
+      <h1>FOOTER</h1>
+    </footer>
   </body>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="./script.js"></script>
 </html>
