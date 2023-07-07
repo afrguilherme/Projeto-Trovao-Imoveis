@@ -16,3 +16,14 @@ document.addEventListener("DOMContentLoaded", function () {
     keyboard: true,
   });
 });
+
+const backToTopBtn = document.querySelector(".top-arrow-btn");
+const backToTop = () => {
+  if (window.scrollY >= 100) {
+    backToTopBtn.classList.add("show");
+  } else {
+    backToTopBtn.classList.remove("show");
+  }
+};
+
+window.addEventListener("scroll", backToTop);

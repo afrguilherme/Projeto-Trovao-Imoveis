@@ -40,12 +40,12 @@ header {
   margin-left: 60px;
 }
 
-a:hover {
+li a:hover {
   cursor: pointer;
   opacity: 0.5;
 }
 
-a {
+li a {
   font-size: 18px;
   text-decoration: none;
 }
@@ -63,6 +63,7 @@ a {
 }
 
 main {
+  width: 100%;
   background-color: #c5a583;
   min-height: 460px;
   max-width: 100%;
@@ -70,6 +71,42 @@ main {
   justify-content: center;
   flex-wrap: wrap;
   box-shadow: inset 0px 10px 10px -7px rgba(0, 0, 0, 0.75);
+}
+
+.top-arrow-btn {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 2;
+  background: none;
+  border: none;
+  width: 50px;
+  height: 50px;
+  visibility: hidden;
+  opacity: 0;
+
+  transition: 0.3s;
+  transform: translateY(100%);
+}
+
+.top-arrow-btn.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.top-arrow-img {
+  width: 100%;
+  opacity: 0.75;
+}
+
+.top-arrow-img:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.top-arrow-img:active {
+  opacity: 0.75;
 }
 
 .swiper-slide img {
@@ -120,6 +157,15 @@ main {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.properties-title {
+  color: #ffffff;
+  font-size: 20px;
+  margin: 20px 0;
 }
 
 .available-properties-wrapper {
@@ -128,12 +174,16 @@ main {
   justify-content: center;
   align-items: center;
   grid-template-columns: repeat(4, minmax(215px, 215px));
-  gap: 50px 80px;
+  gap: 50px 100px;
   margin: 20px 0;
 }
 
 .available-property {
-  height: 280px;
+  height: 265px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 20px;
   background-color: #ffffff;
   box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.75);
@@ -158,12 +208,29 @@ footer {
   height: 300px;
 }
 
+@media screen and (max-width: 1160px) {
+  .available-properties-wrapper {
+    grid-template-columns: repeat(3, minmax(215px, 215px));
+  }
+}
+
 @media screen and (max-width: 1100px) {
   header {
     width: 100%;
     padding: 20px 30px;
   }
 
+  .available-properties-wrapper {
+    grid-template-columns: repeat(2, minmax(215px, 215px));
+    gap: 50px 110px;
+  }
+
+  .top-arrow-btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
   .mobile-menu-icon {
     display: block;
     width: 60px;
@@ -174,14 +241,17 @@ footer {
     display: none;
   }
 
-  .available-properties-wrapper {
-    grid-template-columns: repeat(2, minmax(215px, 215px));
-    gap: 50px 110px;
+  .top-arrow-btn {
+    display: none;
   }
 }
 
-@media screen and (max-width: 705px) {
+@media screen and (max-width: 600px) {
   .available-properties-wrapper {
     grid-template-columns: repeat(1, minmax(215px, 215px));
+  }
+
+  .top-arrow-btn {
+    display: none;
   }
 }
