@@ -186,20 +186,54 @@ main {
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  background-color: #ffffff;
-  box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.75);
   cursor: pointer;
   transition: 0.6s all ease;
   overflow: hidden;
 }
 
-.available-property img {
+.flip-container {
+  width: 100%;
   height: 100%;
+  perspective: 1000px;
+  box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.75);
 }
 
-.available-property:hover {
-  scale: 1.1;
+.flipper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
+
+.flip-container:hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.front {
+  background-color: red;
+}
+
+.back {
+  transform: rotateY(180deg);
+  background-color: black;
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* .available-property img {
+  height: 100%;
+} */
+
+/* .available-property:hover {
+  scale: 1.1;
+} */
 
 footer {
   background-color: #ffffff;
