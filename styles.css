@@ -54,6 +54,19 @@ li a {
   color: #c5a583;
 }
 
+.search-icon {
+  position: relative;
+  top: 5px;
+  margin-left: 50px;
+  width: 20px;
+  height: 20px;
+}
+
+.search-icon:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
 .mobile-menu-icon {
   display: none;
 }
