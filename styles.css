@@ -11,12 +11,12 @@ body {
   flex-direction: column;
 }
 
-.header-logo {
+.company-logo {
   width: 90px;
   height: 85px;
 }
 
-.header-logo:hover {
+.company-logo:hover {
   cursor: pointer;
   scale: 1.2;
 }
@@ -52,19 +52,6 @@ li a {
 
 .nav-links {
   color: #c5a583;
-}
-
-.search-icon {
-  position: relative;
-  top: 5px;
-  margin-left: 50px;
-  width: 20px;
-  height: 20px;
-}
-
-.search-icon:hover {
-  opacity: 0.5;
-  cursor: pointer;
 }
 
 .mobile-menu-icon {
@@ -262,7 +249,58 @@ footer {
   background-color: #ffffff;
   box-shadow: 0px -2px 10px 0px rgba(0, 0, 0, 0.75);
   width: 100%;
-  height: 300px;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.footer-info {
+  width: 300px;
+}
+
+.contact-list {
+  list-style: none;
+  margin-right: 15px;
+}
+
+.contact-list:hover {
+  cursor: pointer;
+  scale: 1.2;
+}
+
+.contact-footer {
+  position: relative;
+  right: 100px;
+}
+
+.contact-footer ul {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.contact-footer h3 {
+  margin-bottom: 20px;
+  color: #4d4d4d;
+}
+
+.footer-wrapper p {
+  color: #4d4d4d;
+}
+
+.bottom-rights {
+  display: block;
+  align-self: flex-end;
+  width: 100%;
+  background-color: #0060f6;
+  color: #ffffff;
+  text-align: center;
+}
+
+.bottom-rights a {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
@@ -284,6 +322,10 @@ footer {
 
   .top-arrow-btn {
     display: none;
+  }
+
+  .contact-footer {
+    right: 0;
   }
 }
 
@@ -308,6 +350,19 @@ footer {
   .top-arrow-btn {
     display: none;
   }
+
+  .contact-footer {
+    position: relative;
+    right: 0;
+  }
+
+  .contact-list {
+    margin-right: 0px;
+  }
+
+  .contact-list img {
+    padding: 5px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -318,8 +373,20 @@ footer {
   .top-arrow-btn {
     display: none;
   }
-}
 
+  .footer-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+}
 @media screen and (max-width: 600px) {
   .available-properties-wrapper {
     grid-template-columns: repeat(1, minmax(215px, 350px));
