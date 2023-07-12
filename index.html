@@ -30,7 +30,9 @@
           <li class="nav-list-item">
             <a href="#properties" class="nav-links">Imóveis Disponíveis</a>
           </li>
-          <li class="nav-list-item"><a class="nav-links">Sobre</a></li>
+          <li class="nav-list-item">
+            <a href="#about" class="nav-links">Sobre</a>
+          </li>
           <li class="nav-list-item">
             <a href="#contact" class="nav-links">Contato</a>
           </li>
@@ -56,17 +58,17 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="swiper-img">
-              <img src="./assets/slider1.png" alt="Foto 01" />
+              <img src="./assets/slider1.png" alt="Imagem Carrossel" />
             </div>
           </div>
           <div class="swiper-slide">
             <div class="swiper-img">
-              <img src="./assets/slider2.png" alt="Foto 02" />
+              <img src="./assets/slider2.png" alt="Imagem Carrossel" />
             </div>
           </div>
           <div class="swiper-slide">
             <div class="swiper-img">
-              <img src="./assets/slider3.png" alt="Foto 03" />
+              <img src="./assets/slider3.png" alt="Imagem Carrossel" />
             </div>
           </div>
         </div>
@@ -82,7 +84,7 @@
           <div class="available-property">
             <div class="flipper">
               <div class="front">
-                <img src="./assets/imóvel-barra.jpg" />
+                <img src="./assets/imóvel-barra.jpg" alt="preview-imóvel" />
                 <button class="property-button">Barra da Tijuca</button>
               </div>
               <div class="back"></div>
@@ -91,7 +93,7 @@
           <div class="available-property">
             <div class="flipper">
               <div class="front">
-                <img src="./assets/imóvel-recreio.jpg" />
+                <img src="./assets/imóvel-recreio.jpg" alt="preview-imóvel" />
                 <button class="property-button">
                   Recreio dos Bandeirantes
                 </button>
@@ -102,7 +104,10 @@
           <div class="available-property">
             <div class="flipper">
               <div class="front">
-                <img src="./assets/imóvel-jacarepagua.jpg" />
+                <img
+                  src="./assets/imóvel-jacarepagua.jpg"
+                  alt="preview-imóvel"
+                />
                 <button class="property-button">Jacarepaguá</button>
               </div>
               <div class="back"></div>
@@ -111,7 +116,7 @@
           <div class="available-property">
             <div class="flipper">
               <div class="front">
-                <img src="./assets/imóvel-ipanema.jpg" />
+                <img src="./assets/imóvel-ipanema.jpg" alt="preview-imóvel" />
                 <button class="property-button">Ipanema</button>
               </div>
               <div class="back"></div>
@@ -120,7 +125,7 @@
           <div class="available-property">
             <div class="flipper">
               <div class="front">
-                <img src="./assets/imóvel-tijuca.jpg" />
+                <img src="./assets/imóvel-tijuca.jpg" alt="preview-imóvel" />
                 <button class="property-button">Tijuca</button>
               </div>
               <div class="back"></div>
@@ -129,7 +134,10 @@
           <div class="available-property">
             <div class="flipper">
               <div class="front">
-                <img src="./assets/imóvel-campogrande.jpg" />
+                <img
+                  src="./assets/imóvel-campogrande.jpg"
+                  alt="preview-imóvel"
+                />
                 <button class="property-button">Campo Grande</button>
               </div>
               <div class="back"></div>
@@ -138,7 +146,7 @@
           <div class="available-property">
             <div class="flipper">
               <div class="front">
-                <img src="./assets/imóvel-leblon.jpg" />
+                <img src="./assets/imóvel-leblon.jpg" alt="preview-imóvel" />
                 <button class="property-button">Leblon</button>
               </div>
               <div class="back"></div>
@@ -147,7 +155,7 @@
           <div class="available-property">
             <div class="flipper">
               <div class="front">
-                <img src="./assets/imóvel-botafogo.jpg" />
+                <img src="./assets/imóvel-botafogo.jpg" alt="preview-imóvel" />
                 <button class="property-button">Botafogo</button>
               </div>
               <div class="back"></div>
@@ -157,33 +165,63 @@
       </section>
 
       <!--Available Properties End-->
-      <section class="about"></section>
+      <section class="about">
+        <h2 id="about">Sobre</h2>
+        <div class="about-sheet">
+          <div class="about-image-wrapper">
+            <img
+              class="about-image"
+              src="./assets/about-image.jpeg"
+              alt="Imagem Responsável"
+            />
+          </div>
+          <div class="about-text-wrapper">
+            <p class="about-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+              praesentium sit, labore obcaecati inventore placeat enim
+              accusantium sed similique, incidunt quia rem ullam mollitia ipsa
+              doloremque harum? Libero, quasi consequuntur!
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="footer-wrapper">
         <div class="footer-info">
           <p>
-            Trovão Imóveis Corretora S/A. <br />
-            CNPJ: 00.000.000/0000-00 <br />
-            CEP: 00000-000. <br />
-            Sede Administrativa: Rua Nome da Rua <br />
-            Nº 000 - Rio de Janeiro.
+            Trovão Imóveis Serviços Imobiliários. <br />
+            CRECI: 80.660. <br />
+            Sede Administrativa: Rua Barcelos Domingos, Nº 32. <br />
+            CEP: 23080-020. <br />
+            Rio de Janeiro.
           </p>
         </div>
         <div class="contact-footer">
           <h3 id="contact">Contato</h3>
           <ul>
-            <li class="contact-list"><img src="./assets/ig.png" /></li>
-            <li class="contact-list"><img src="./assets/wp.png" /></li>
+            <li class="contact-list">
+              <a
+                href="https://instagram.com/trovaoimoveis?igshid=MmU2YjMzNjRlOQ=="
+                ><img src="./assets/ig.png" alt="icone-instagram"
+              /></a>
+            </li>
+            <li class="contact-list">
+              <a href="https://wa.me/5521979579537">
+                <img src="./assets/wp.png" alt="icone-whatsapp" />
+              </a>
+            </li>
           </ul>
           <p>(21)97957-9537</p>
         </div>
       </div>
       <div class="bottom-rights">
         <p>
-          Copyright © - Todos os direitos reservados: Trovão Imóveis Corretora
-          S/A - Desenvolvido por
-          <a>Guilherme Augusto</a>.
+          Copyright © - Todos os direitos reservados: Trovão Imóveis Serviços
+          Imobiliários - Desenvolvido por
+          <a href="https://www.linkedin.com/in/afrguilherme/" class="dev-link"
+            >Guilherme Augusto</a
+          >.
         </p>
       </div>
     </footer>
