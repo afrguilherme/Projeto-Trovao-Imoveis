@@ -58,6 +58,16 @@ li a {
   display: none;
 }
 
+.btn-menu {
+  border: none;
+  background: transparent;
+  width: 60px;
+}
+
+.menu-mobile {
+  display: none;
+}
+
 .manual-btn:hover {
   background-color: #727272;
 }
@@ -404,13 +414,36 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
+  .menu-mobile {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    z-index: 2;
+    position: absolute;
+    top: 129px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+  }
+
+  .nav-list-mb {
+    margin-top: 50px;
+    text-align: center;
+    list-style: none;
+  }
+
+  .nav-list-item {
+    margin: 20px 0;
+  }
+
   .mobile-menu-icon {
     display: block;
     width: 60px;
     filter: #c5a583;
   }
 
-  .nav-list {
+  .nav-desktop {
     display: none;
   }
 

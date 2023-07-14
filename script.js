@@ -27,3 +27,14 @@ const backToTop = () => {
 };
 
 window.addEventListener("scroll", backToTop);
+
+function trocarImagem() {
+  const imgElement = document.querySelector(".mobile-menu-icon");
+  const imgSrc = imgElement.getAttribute("src");
+
+  if (imgSrc === "./assets/menu-icon.png") {
+    imgElement.setAttribute("src", "./assets/close-button.png");
+  } else if (imgSrc === "./assets/close-button.png") {
+    imgElement.setAttribute("src", "./assets/menu-icon.png");
+  }
+}
