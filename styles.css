@@ -59,8 +59,9 @@ li a {
 }
 
 .btn-menu {
+  display: none;
   border: none;
-  background: transparent;
+  background: none;
   width: 60px;
 }
 
@@ -441,6 +442,10 @@ footer {
     display: block;
     width: 60px;
     filter: #c5a583;
+  }
+
+  .btn-menu {
+    display: block;
   }
 
   .nav-desktop {

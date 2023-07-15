@@ -28,7 +28,7 @@ const backToTop = () => {
 
 window.addEventListener("scroll", backToTop);
 
-function trocarImagem() {
+function menuToCloseBtn() {
   const imgElement = document.querySelector(".mobile-menu-icon");
   const imgSrc = imgElement.getAttribute("src");
 
