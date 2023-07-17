@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-const backToTopBtn = document.querySelector(".top-arrow-btn");
 const backToTop = () => {
+  const backToTopBtn = document.querySelector(".top-arrow-btn");
   if (window.scrollY >= 100) {
     backToTopBtn.classList.add("show");
   } else {
@@ -28,13 +28,18 @@ const backToTop = () => {
 
 window.addEventListener("scroll", backToTop);
 
-function menuToCloseBtn() {
-  const imgElement = document.querySelector(".mobile-menu-icon");
-  const imgSrc = imgElement.getAttribute("src");
+function showMobileMenu() {
+  const mobileMenu = document.querySelector(".menu-mobile");
+  const mobileMenuIcon = document.querySelector(".mobile-menu-icon");
+  const menuIconSrc = mobileMenuIcon.getAttribute("src");
 
-  if (imgSrc === "./assets/menu-icon.png") {
-    imgElement.setAttribute("src", "./assets/close-button.png");
-  } else if (imgSrc === "./assets/close-button.png") {
-    imgElement.setAttribute("src", "./assets/menu-icon.png");
+  if (menuIconSrc === "./assets/menu-icon.png") {
+    mobileMenuIcon.setAttribute("src", "./assets/close-button.png");
+    mobileMenu.style.maxHeight = "100vh";
+    document.documentElement.style.overflow = "hidden";
+  } else if (menuIconSrc === "./assets/close-button.png") {
+    mobileMenuIcon.setAttribute("src", "./assets/menu-icon.png");
+    mobileMenu.style.maxHeight = "0";
+    document.documentElement.style.overflow = "auto";
   }
 }

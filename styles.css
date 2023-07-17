@@ -287,6 +287,8 @@ main {
 .about-text {
   width: 450px;
   margin: 20px 0;
+  font-size: 18px;
+  text-align: center;
 }
 
 .about-text-wrapper {
@@ -302,10 +304,6 @@ main {
   text-align: center;
   font-size: 22px;
   margin-bottom: 20px;
-}
-
-.about-text-wrapper p {
-  font-size: 20px;
 }
 
 footer {
@@ -391,7 +389,7 @@ footer {
   }
 
   .available-properties-wrapper {
-    gap: 50px 180px;
+    gap: 50px 140px;
   }
 
   .top-arrow-btn {
@@ -410,7 +408,7 @@ footer {
 @media screen and (max-width: 1010px) {
   .available-properties-wrapper {
     grid-template-columns: repeat(2, minmax(215px, 300px));
-    padding: 10px;
+    padding: 0 26px;
   }
 }
 
@@ -425,17 +423,20 @@ footer {
     left: 0;
     width: 100%;
     height: 100vh;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease 0s;
     backdrop-filter: blur(10px);
   }
 
   .nav-list-mb {
-    margin-top: 50px;
+    margin-top: 100px;
     text-align: center;
     list-style: none;
   }
 
   .nav-list-item {
-    margin: 20px 0;
+    margin: 50px 0;
   }
 
   .mobile-menu-icon {
