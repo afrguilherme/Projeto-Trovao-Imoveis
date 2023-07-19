@@ -43,3 +43,24 @@ function showMobileMenu() {
     document.documentElement.style.overflow = "auto";
   }
 }
+
+function showProperties() {
+  const secundaryProperties = document.querySelectorAll(".secundary-property");
+  const seeMoreBtn = document.querySelector(".see-more-btn");
+  const windowWidth = window.innerWidth;
+
+  if (windowWidth < 1010) {
+    for (let i = 0; i < secundaryProperties.length; i++) {
+      let property = secundaryProperties[i];
+      const currentDisplay = property.style.display;
+
+      if (currentDisplay === "none") {
+        property.style.display = "flex";
+        seeMoreBtn.textContent = "Ver Menos";
+      } else {
+        property.style.display = "none";
+        seeMoreBtn.textContent = "Ver Mais";
+      }
+    }
+  }
+}
