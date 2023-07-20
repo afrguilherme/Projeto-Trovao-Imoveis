@@ -433,6 +433,13 @@ footer {
     grid-template-columns: repeat(2, minmax(215px, 300px));
     padding: 0 26px;
   }
+
+  .secundary-property {
+    display: none;
+  }
+  .secundary-property.show {
+    display: unset;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -473,10 +480,6 @@ footer {
   }
 
   .nav-desktop {
-    display: none;
-  }
-
-  .secundary-property {
     display: none;
   }
 

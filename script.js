@@ -48,19 +48,19 @@ function showProperties() {
   const secundaryProperties = document.querySelectorAll(".secundary-property");
   const seeMoreBtn = document.querySelector(".see-more-btn");
   const windowWidth = window.innerWidth;
+  const propertiesTitle = document.getElementById("properties");
 
   if (windowWidth < 1010) {
     for (let i = 0; i < secundaryProperties.length; i++) {
       let property = secundaryProperties[i];
-      const currentDisplay = property.style.display;
+      property.classList.toggle("show");
+    }
 
-      if (currentDisplay === "none") {
-        property.style.display = "flex";
-        seeMoreBtn.textContent = "Ver Menos";
-      } else {
-        property.style.display = "none";
-        seeMoreBtn.textContent = "Ver Mais";
-      }
+    if (seeMoreBtn.textContent === "Ver Menos") {
+      seeMoreBtn.textContent = "Ver Mais";
+      propertiesTitle.scrollIntoView();
+    } else {
+      seeMoreBtn.textContent = "Ver Menos";
     }
   }
 }
