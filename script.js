@@ -45,14 +45,16 @@ function showMobileMenu() {
 }
 
 function showProperties() {
-  const secundaryProperties = document.querySelectorAll(".secundary-property");
+  const secundaryPropertiesMb = document.querySelectorAll(
+    ".secundary-property-mb"
+  );
   const seeMoreBtn = document.querySelector(".see-more-btn");
   const windowWidth = window.innerWidth;
   const propertiesTitle = document.getElementById("properties");
 
-  if (windowWidth < 1010) {
-    for (let i = 0; i < secundaryProperties.length; i++) {
-      let property = secundaryProperties[i];
+  if (windowWidth <= 1030) {
+    for (let i = 0; i < secundaryPropertiesMb.length; i++) {
+      let property = secundaryPropertiesMb[i];
       property.classList.toggle("show");
     }
 
