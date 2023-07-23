@@ -87,7 +87,7 @@ main {
 
 .top-arrow-btn {
   position: fixed;
-  bottom: 10px;
+  bottom: 25px;
   right: 10px;
   z-index: 2;
   background: none;
@@ -314,13 +314,16 @@ main {
 }
 
 .about-text {
-  width: 450px;
+  max-width: 600px;
+  width: 100%;
   margin: 20px 0;
   font-size: 18px;
   text-align: center;
 }
 
 .about-text-wrapper {
+  display: flex;
+  align-items: center;
   padding: 7px;
 }
 
@@ -353,26 +356,16 @@ footer {
 
 .contact-list {
   list-style: none;
-  margin-right: 15px;
-}
-
-.contact-list:hover {
-  cursor: pointer;
-  scale: 1.2;
+  margin: 10px 15px 0 0;
 }
 
 .contact-footer {
   position: relative;
-  right: 100px;
-}
-
-.contact-footer ul {
-  display: flex;
-  margin-bottom: 20px;
+  right: 45px;
 }
 
 .contact-footer h3 {
-  margin-bottom: 20px;
+  text-align: center;
   color: #4d4d4d;
 }
 
@@ -380,6 +373,30 @@ footer {
   max-width: 400px;
   width: 100%;
   color: #4d4d4d;
+}
+
+.contact-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 20px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  color: #c5a583;
+  box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.75);
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+}
+
+.contact-button:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+
+.contact-button img {
+  margin-right: 10px;
 }
 
 .bottom-rights {
@@ -407,7 +424,7 @@ footer {
   }
 
   .about-sheet {
-    gap: 100px;
+    gap: 50px;
   }
 }
 
