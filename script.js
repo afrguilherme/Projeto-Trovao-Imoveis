@@ -48,6 +48,7 @@ function showProperties() {
   const secundaryPropertiesMb = document.querySelectorAll(
     ".secundary-property-mb"
   );
+  const secundaryProperties = document.querySelectorAll(".secundary-property");
   const seeMoreBtn = document.querySelector(".see-more-btn");
   const windowWidth = window.innerWidth;
   const propertiesTitle = document.getElementById("properties");
@@ -56,6 +57,18 @@ function showProperties() {
     for (let i = 0; i < secundaryPropertiesMb.length; i++) {
       let property = secundaryPropertiesMb[i];
       property.classList.toggle("show");
+    }
+
+    if (seeMoreBtn.textContent === "Ver Menos") {
+      seeMoreBtn.textContent = "Ver Mais";
+      propertiesTitle.scrollIntoView();
+    } else {
+      seeMoreBtn.textContent = "Ver Menos";
+    }
+  } else {
+    for (let i = 0; i < secundaryProperties.length; i++) {
+      let propertyDk = secundaryProperties[i];
+      propertyDk.classList.toggle("show");
     }
 
     if (seeMoreBtn.textContent === "Ver Menos") {

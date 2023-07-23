@@ -172,7 +172,6 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 20px;
   overflow: hidden;
 }
 
@@ -202,6 +201,13 @@ main {
   cursor: pointer;
   transition: 0.6s all ease;
   perspective: 1000px;
+}
+
+.secundary-property {
+  display: none;
+}
+.secundary-property.show {
+  display: unset;
 }
 
 .flipper {
