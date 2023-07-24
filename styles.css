@@ -187,7 +187,7 @@ main {
   justify-content: center;
   align-items: center;
   grid-template-columns: repeat(4, minmax(215px, 215px));
-  gap: 50px 100px;
+  gap: 100px 10%;
   margin: 20px 0;
 }
 
@@ -417,7 +417,7 @@ footer {
   color: blue;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1250px) {
   .available-properties-wrapper {
     grid-template-columns: repeat(4, minmax(215px, 215px));
     gap: 50px 80px;
