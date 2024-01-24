@@ -239,6 +239,25 @@ main {
 .back {
   transform: rotateY(180deg);
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+}
+
+.back h1 {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.back h2 {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.back p {
+  font-size: 15px;
+  margin-top: 10px;
 }
 
 .front,
@@ -420,7 +439,8 @@ footer {
 @media screen and (max-width: 1250px) {
   .available-properties-wrapper {
     grid-template-columns: repeat(4, minmax(215px, 215px));
-    gap: 50px 80px;
+    gap: 50px 60px;
+    padding: 0 20px;
   }
 
   .about-sheet {
